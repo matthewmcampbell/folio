@@ -1,0 +1,284 @@
+@font-face {
+   font-family: Monofett;
+   src: url(./fonts/Monofett/Monofett-Regular.ttf);
+}
+@font-face {
+   font-family: Jomhuria;
+   src: url(./fonts/Jomhuria/Jomhuria-Regular.ttf);
+}
+@font-face {
+   font-family: Fredoka_One;
+   src: url(./fonts/Fredoka_One/FredokaOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: Merriweather;
+  src: url(./fonts/Merriweather/Merriweather-Regular.ttf);
+}
+
+@font-face {
+  font-family: Dancing_Script;
+  src: url(./fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  /*font-family: Monofett*/ /*'Monofett', cursive*/;
+}
+html, body {
+    height:98%;
+}
+
+body {
+	background: #0F2027;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+.fadeIn_1 {
+    opacity: 0; 
+    -moz-transition: opacity 1.5s ease-in;
+    -webkit-transition: opacity 1.5s ease-in;
+    -o-transition: opacity 1.5s ease-in;
+    transition: opacity 1.5s ease-in;
+}
+
+body.loaded_1 .fadeIn_1 {
+    opacity: 1;
+}
+
+.fadeIn_2 {
+    color: #000;
+    -moz-transition: color 5s;
+    -webkit-transition: color 5s;
+    -o-transition: color 5s;
+    transition: color 5s;
+}
+
+body.loaded_2 .fadeIn_2 {
+    color: #FFE6E6;
+}
+.background_geom_1 {
+  width: 70%;
+  position: fixed;
+  right: 0%;
+  top: 0.3%;
+  opacity: 25%;
+  z-index: -1;
+}
+.background_geom_2 {
+  width: 70%;
+  position: fixed;
+  right: 0.4%;
+  top: 0%;
+  opacity: 10%;
+  z-index: -1;
+}
+
+.firstDiv {
+  font-size: 50pt;
+  text-align: left;
+  color: #000;
+  /*width: 800px;*/
+  width: 65%;
+  float: left;
+  position: relative;
+  top: 30%;
+  left: 8%;
+  /*transform: translate(-70%, -70%);*/
+ }
+
+.sideBarLeft {
+	position: absolute;
+	height: 100%;
+	width: 5%;
+	float: left;
+	top: 3%;
+	margin-left: 3px;
+}
+
+.sideBarRight {
+	position: absolute;
+	height: 100%;
+	width: 20%;
+	float: right;
+}
+
+#sideBarFill {
+	height: 30%;
+	text-align: right;
+}
+
+.sideBarFillIcon {
+	margin: 5px;
+	height: 15%;
+}
+
+.sideBarFillText {
+	/*font-family: Jomhuria;*/
+	/*height: 15%;*/
+	text-align: right;
+	font-size: 50pt;
+}
+
+.sideBarFillText a{
+  font-family: Fredoka_One;
+  text-decoration: underline solid transparent;
+  color: #000;
+  transition: text-decoration 1s ease-out;
+  margin: 1em auto;
+  /*border-radius: 1em;*/
+}
+
+.sideBarFillText a:hover {
+  text-decoration: underline solid #FFF/*Currentcolor*/;
+}
+#cf {
+  position:relative;
+  height:100%;
+  width:100%;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 0.3s ease-in;
+  -moz-transition: opacity 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+
+.card {
+  float: left;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 19%;
+  margin: 2px;
+  opacity: 0.7;
+  min-width: 140px;
+  font-size: 1vw !important;
+}
+.page .text section{
+  font-family: Fredoka_One !important;
+  font-size: 1.2vw;
+  color: #000;
+  text-align: left;
+  font-size: 1vw !important;
+}
+
+.page .text .card {
+  font-family: Fredoka_One !important;
+  color: #000;
+  text-align: left;
+  font-size: 1vw !important;
+}
+
+.page .text .card img{
+  width: 512px;
+  /*height: 11vw;*/
+  height: 150px;
+}
+
+.card:hover {
+  opacity: 1;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+.container {
+  padding: 2px 16px;
+  height: 90px;
+}
+
+.award {
+  background-color: pink;
+}
+
+.work {
+  background-color: indianred;
+}
+
+.project {
+  background-color: lightblue;
+}
+
+#card_content {
+	/*width: 38%;*/
+	float: right;
+	/*text-align: center;*/
+	/*font-size: 1.5vw;*/
+  font-size: 12pt;
+	margin-left: 1%;
+	margin-right: 10px;
+	margin-top: 50px;
+}
+
+ul {
+	list-style-type:none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+  }
+}
